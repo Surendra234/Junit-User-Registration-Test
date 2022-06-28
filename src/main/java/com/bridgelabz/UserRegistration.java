@@ -4,7 +4,7 @@ public class UserRegistration {
 
     private static final String firstNamePattern = "[A-Z]{1}[a-z]{3,}$";
     private static final String lastNamePattern = "^[A-Z]{1}[a-z]{3,}$";
-    private static final String emailPattern = "^[a-zA-Z0-9+-]+@[.a-zA-Z0-9.-]+$";
+    private static final String emailPattern = "[a-zA-Z0-9][a-zA-Z-0-9_+]*([.][a-zA-Z0-9]+)?[@][a-zA-Z-0-9]+[.][a-z.]{2,4}([.][a-zA-Z]{2,4})?";
     private static final String phoneNoPattern = "[0-9\s+]{4}+[6789]{1}+[0-9]{9}+$";
     private static final String passwordPattern = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}";
 
